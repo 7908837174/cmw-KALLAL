@@ -4,7 +4,7 @@ This directory contains a bash implementation of JWS (JSON Web Signature) signin
 
 ## Implementation Status
 
-**✅ Completed Features:**
+** Completed Features:**
 - JWS header creation with proper algorithm (ES256) and content type
 - CMW marshaling to JSON triple format `[type, value, indicator]`
 - Base64URL encoding/decoding without padding
@@ -13,7 +13,7 @@ This directory contains a bash implementation of JWS (JSON Web Signature) signin
 - Comprehensive test suite (10 test cases)
 - CLI commands for signing and verification
 
-**⚠️ Placeholder Components:**
+** Placeholder Components:**
 - ECDSA signature generation (needs cryptographic library)
 - ECDSA signature verification (needs cryptographic library)
 
@@ -74,18 +74,18 @@ This directory contains a bash implementation of JWS (JSON Web Signature) signin
 ## Standards Compliance
 
 ### JWS (RFC 7515)
-- ✅ Compact serialization format
-- ✅ ES256 algorithm (ECDSA using P-256 and SHA-256)
-- ✅ Base64URL encoding without padding
-- ✅ Proper header structure with `alg`, `cty`, and `kid`
-- ✅ Content type `application/cmw+json`
+-  Compact serialization format
+-  ES256 algorithm (ECDSA using P-256 and SHA-256)
+-  Base64URL encoding without padding
+-  Proper header structure with `alg`, `cty`, and `kid`
+-  Content type `application/cmw+json`
 
 ### RATS CMW (draft-ietf-rats-msg-wrap)
-- ✅ Section 4.2 compliance for JSON CMW signing
-- ✅ CMW triple format: `[type, value, indicator]`
-- ✅ Proper indicator bit flags
-- ✅ JSON record format for signing
-- ✅ Base64 encoding for binary content
+-  Section 4.2 compliance for JSON CMW signing
+-  CMW triple format: `[type, value, indicator]`
+-  Proper indicator bit flags
+-  JSON record format for signing
+-  Base64 encoding for binary content
 
 ## JWS Structure
 
